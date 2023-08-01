@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Test.css">
+	<link rel="stylesheet" href="reset.css">
+	<title>Test-nav-slider</title>
+	<link rel="shortcut icon" href="img/Logo-icon-colored.svg" type="image/x-icon">
+</head>
+<body>
+	<!---header_menu--->
+	<header>
+
+		<div class="header" id="Home">
+			<div class="container-1">
+
+				<div class="lsi">
+					<a href=""><img class="logo-light" src="img/Logo white.svg" alt=""></a>
+					<div class="search">
+						<input type="text" placeholder="Шукати..." class="input_search">
+					</div>
+					<div class="icons">
+						<button><img src="img/heart.svg" alt=""></button>
+						<button onclick="popupIn()"><img src="img/user.svg" alt=""></button>
+						<button><img src="img/shopping-cart.svg" alt=""></button>
+					</div>
+				</div>
+
+				<div class="menu">
+					<ul class="menu_ul">
+						<li class="menu_text"><a href="#Home">Home</a></li>
+						<li class="menu_text"><a href="#Sale">Sale</a></li>
+						<li class="menu_text"><a href="#Top-seller">Top Saller</a></li>
+						<li class="menu_text"><a href="#New">New</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!---header_slider--->
+		<!-- 600 -->
+		<div class="header_2">
+			<div class="container-2">
+
+				<div class="img_slider">
+
+					
+
+					<div class="imgs">
+						<img class="mySlides" src="img/slide-1.png" alt="">
+                        <img class="mySlides" src="img/slide-2.png" alt="">
+                        <img class="mySlides" src="img/slide-3.png" alt="">
+					</div>
+					
+					<div class="nav-slider">
+						<button class="w3-button w3-display-left" onclick="plusDivs(-1)"><img src="img/arrow-left.svg" alt=""></button>
+						<label for="btn1" class="bar"></label>
+						<label for="btn2" class="bar"></label>
+						<label for="btn3" class="bar"></label>
+						<label for="btn4" class="bar"></label>
+						<label for="btn5" class="bar"></label>
+						<button class="w3-button w3-display-right" onclick="plusDivs(+1)"><img src="img/arrow-right.svg" alt=""></button>
+					</div>
+					
+					<div class="slides">
+						<input type="radio" name="common" id="btn1" checked>
+						<input type="radio" name="common" id="btn2">
+						<input type="radio" name="common" id="btn3">
+						<input type="radio" name="common" id="btn4">
+						<input type="radio" name="common" id="btn5">
+					</div>
+
+				</div>
+
+
+				<div class="text_btn">
+
+						<div class="text">
+							<p class="p1">Осіння Акція</p>
+							<p class="p2">Знижки до -30%</p>	
+						</div>
+
+					<button class="btn">Купити</button>
+				</div>
+
+			</div>
+		</div>
+		
+	</header>
+	<!---header_slider-END--->
+
+
+	<!---Sale block--->
+	<div class="Sale-block" id="Sale">
+		<div class="container-3">
+			<p class="con-p1-sale">Sale</p>
+
+			<center><div class="arrows">
+				<label class="swiper-button-prev"><img src="img/arrow-left.svg" alt=""></label>
+				<a href="./SaleBlock-opened.html"><button class="glow-btn">Перегянути більше</button></a>
+				<label class="swiper-button-next"><img src="img/arrow-right.svg" alt=""></label>
+			</div></center>
+
+			<div class="blocks">
+
+
+				<div class="block-1 swiper-slide current">
+					<div class="img-sale-1">
+						<img src="img/card1.png" alt="">
+						<div class="minus-sale">-30%</div>
+					</div>
+
+					<p class="con-p2-sale">Пенал жорсткий, одинарний, Синій. </p>
+
+					<div class="text-btn">
+						<p class="con-p1-btn">245₴</p>
+						<p class="con-p2-btn">350₴</p>
+						<button class="btn-buy">Купити</button>
+					</div>	
+				</div>
+
+
+				<div class="block-2 swiper-slide">
+					<div class="img-sale-2">
+						<img src="img/card2.png" alt="">
+						<div class="minus-sale">-30%</div>
+					</div>
+
+					<p class="con-p1-sale2">Рюкзак Under Armour 2л Чорний.</p>
+
+					<div class="text-btn-2">
+						<p class="con-p1-btn2">1146₴</p>
+						<p class="con-p2-btn2">2065₴</p>
+						<button class="btn-buy">Купити</button>
+					</div>
+				</div>
+
+
+				<div class="block-3 swiper-slide">
+					<div class="img-sale-3">
+						<img src="img/card3.png" alt="">
+						<div class="minus-sale">-30%</div>
+					</div>
+
+					<p class="con-p1-sale3">Дерев’яна підставка для ручок.</p>
+
+					<div class="text-btn-3">
+						<p class="con-p1-btn3">45₴</p>
+						<p class="con-p2-btn3">64₴</p>
+						<button class="btn-buy">Купити</button>
+					</div>
+				</div>
+
+
+				<div class="block-4 swiper-slide">
+					<div class="img-sale-4">
+						<img src="img/card4.png" alt="">
+						<div class="minus-sale">-30%</div>
+					</div>
+
+					<p class="con-p1-sale4">Папка для праці картонна.</p>
+
+					<div class="text-btn-4">
+						<p class="con-p1-btn4">115₴</p>
+						<p class="con-p2-btn4">163₴</p>
+						<button class="btn-buy">Купити</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!---Sale block-ENd--->
+
+    <script src="script.js"></script>
+</body>
+</html>

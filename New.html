@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="New.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>New</title>
+    <link rel="shortcut icon" href="img/Logo-icon-colored.svg" type="image/x-icon">
+</head>
+<body>
+
+<header>
+	<div class="header">
+		<div class="container-1">
+
+			<div class="lsi">
+				<a href="./index.html"><img src="img/Logo white.svg" alt=""></a>
+				<div class="search">
+					<input type="text" placeholder="Шукати..." class="input_search">
+				</div>
+				<div class="icons">
+					<button><a href="./account/wish-list.html"><img src="img/heart.svg" alt=""></a></button>
+					<button onclick="popupIn()"><img src="img/user.svg" alt=""></button>
+					<button onclick="popupCart()"><img src="img/shopping-cart.svg" alt=""></button>
+				</div>
+			</div>
+
+			<div class="menu">
+				<ul class="menu_ul">
+					<li class="menu_text"><a href="./index.html#Home">Home</a></li>
+					<li class="menu_text"><a href="./index.html#Sale">Sale</a></li>
+					<li class="menu_text"><a href="./index.html#Top-seller">Top Saller</a></li>
+					<li class="menu_text"><a href="./index.html#New">New</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+</header>
+
+
+<div class="Sale">
+	<div class="container-2">
+		<p class="p-Sale-h1">New</p>
+
+		<div class="select-div">
+			<select name="" id="" class="select-sale">
+				<option value="">За рейтингом</option>
+				<option value="">За ціною</option>
+			</select>
+		</div>
+
+		<div class="filters-and-products">
+			<div class="Filters">
+				<div class="container-filters">
+
+					<details class="seller" open>
+
+							<summary class="block-personal">
+								<div class="text-arrow-up">	
+									<div class="text-p-seller">
+										<p>Продавець</p> 
+										<p>2</p>
+									</div>
+
+									<img class="New-seller-chevron" src="img/arrow-down.svg" alt="">
+								</div>
+							</summary>
+
+							<div class="checkboxes">
+								<div class="checkbox-1-seller checkxob">
+									<input type="checkbox" id="Bazilik">
+									<label for="Bazilik">Bazilik</label>
+								</div>
+
+								<div class="checkbox-2-seller">
+									<input type="checkbox" id="Other-seller">
+									<label for="Other-seller">Інші продавці</label>
+								</div>
+							</div>
+						
+					</details>
+
+
+					<details class="brends" open>
+
+							<summary class="block-personal">
+								<div class="text-arrow-up">		
+									<div class="text-p-seller">
+										<p>Бренд</p> 
+										<p>8</p>
+									</div>
+
+									<img class="New-brends-chevron" src="img/arrow-down.svg" alt="">
+								</div>
+
+								<input type="text" placeholder="Пошук..." class="input-search-Brends">
+							</summary>
+
+							
+
+							<div class="checkboxes-2 brends-2">
+								<div class="checkbox-1-seller checkxob">
+									<input type="checkbox" id="CoolPack">
+									<label for="CoolPack">Якась фірма</label>
+								</div>
+
+								<div class="checkbox-2-seller checkxob">
+									<input type="checkbox" id="Gear">
+									<label for="Gear">Якась фірма</label>
+								</div>
+
+								<div class="checkbox-3-seller checkxob">
+									<input type="checkbox" id="Herlitz">
+									<label for="Herlitz">Якась фірма</label>
+								</div>
+
+								<div class="checkbox-4-seller checkxob">
+									<input type="checkbox" id="Kite">
+									<label for="Kite">Якась фірма</label>
+								</div>
+
+								<div class="checkbox-5-seller checkxob">
+									<input type="checkbox" id="Smart">
+									<label for="Smart">Якась фірма</label>
+								</div>
+
+								<div class="checkbox-6-seller checkxob">
+									<input type="checkbox" id="YES">
+									<label for="YES">Якась фірма</label>
+								</div>
+
+								<div class="checkbox-7-seller checkxob">
+									<input type="checkbox" id="ZiBI">
+									<label for="ZiBI">Якась фірма</label>
+								</div>
+
+								<div class="checkbox-8-seller checkxob">
+									<input type="checkbox" id="Kidis">
+									<label for="Kidis">Якась фірма</label>
+								</div>
+							</div>
+
+					</details>
+
+					<details class="Price" open>
+
+						<summary class="block-personal">
+							<div class="text-arrow-up">
+								<div class="text-p-seller">
+									<p>Ціна</p> 
+								</div>
+
+								<img class="New-price-chevron" src="img/arrow-down.svg" alt="">
+							</div>	
+						</summary>
+						
+						<div class="input-range">
+							<input type="range" id="min" onclick="minG()" min="0" max="1146">
+							<input type="range" id="max" onclick="maxG()" min="0" max="1146">
+						</div>
+
+						<div class="min-max-btn">
+							<div class="min-max">
+								<input type="text" placeholder="Мін" id="getMin">
+								<input type="text" placeholder="Макс" id="getMax">
+							</div>
+
+							<button>Ок</button>
+						</div>
+
+					</details>
+
+				</div>
+			</div>
+
+			
+			<div class="products">
+				<div class="Sale-block-1 prod">
+
+				
+					<div class="blocks">
+
+						<div class="block-sale-all">
+							<div class="img-sale">
+								<img src="img/card1.png" alt="">
+								<div class="newOF">Новинка</div>
+							</div>
+
+							<p class="con-p-sale">Пенал жорсткий, одинарний, Синій. </p>
+
+							<div class="text-btn-new">
+								<p class="con-p1-btn con-btn">245₴</p>
+								<button class="btn-buy">Купити</button>
+							</div>	
+						</div>
+
+
+						<div class="block-sale-all">
+							<div class="img-sale">
+								<img src="img/card2.png" alt="">
+								<div class="newOF">Новинка</div>
+							</div>
+
+							<p class="con-p-sale">Рюкзак Under Armour 2л Чорний.</p>
+
+							<div class="text-btn-new">
+								<p class="con-p1-btn2 con-btn">1146₴</p>
+								<button class="btn-buy">Купити</button>
+							</div>
+						</div>
+
+
+						<div class="block-sale-all">
+							<div class="img-sale">
+								<img src="img/card3.png" alt="">
+								<div class="newOF">Новинка</div>
+							</div>
+
+							<p class="con-p-sale">Дерев’яна підставка для ручок.</p>
+
+							<div class="text-btn-new">
+								<p class="con-p1-btn3 con-btn">45₴</p>
+								<button class="btn-buy">Купити</button>
+							</div>
+						</div>
+						
+					</div>
+
+				</div>
+
+
+
+				<div class="Sale-block-2 prod">
+
+
+					<div class="blocks">
+
+						<div class="block-sale-all">
+							<div class="img-sale">
+								<img src="img/card1.png" alt="">
+								<div class="newOF">Новинка</div>
+							</div>
+
+							<p class="con-p-sale">Пенал жорсткий, одинарний, Синій. </p>
+
+							<div class="text-btn-new">
+								<p class="con-p1-btn con-btn">245₴</p>
+								<button class="btn-buy">Купити</button>
+							</div>	
+						</div>
+
+
+						<div class="block-sale-all">
+							<div class="img-sale">
+								<img src="img/card2.png" alt="">
+								<div class="newOF">Новинка</div>
+							</div>
+
+							<p class="con-p-sale">Рюкзак Under Armour 2л Чорний.</p>
+
+							<div class="text-btn-new">
+								<p class="con-p1-btn2 con-btn">1146₴</p>
+
+								<button class="btn-buy">Купити</button>
+							</div>
+						</div>
+
+
+						<div class="block-sale-all">
+							<div class="img-sale">
+								<img src="img/card3.png" alt="">
+								<div class="newOF">Новинка</div>
+							</div>
+
+							<p class="con-p-sale">Дерев’яна підставка для ручок.</p>
+
+							<div class="text-btn-new">
+								<p class="con-p1-btn3 con-btn">45₴</p>
+								<button class="btn-buy">Купити</button>
+							</div>
+						</div>
+						
+					</div>
+
+
+				</div>
+
+
+				<div class="Sale-block-3">
+
+
+					<div class="blocks">
+	
+						<div class="block-sale-all">
+							<div class="img-sale">
+								<img src="img/card1.png" alt="">
+								<div class="newOF">Новинка</div>
+							</div>
+	
+							<p class="con-p-sale">Пенал жорсткий, одинарний, Синій. </p>
+	
+							<div class="text-btn-new">
+								<p class="con-p1-btn con-btn">245₴</p>
+								<button class="btn-buy">Купити</button>
+							</div>	
+						</div>
+	
+	
+						<div class="block-sale-all">
+							<div class="img-sale">
+								<img src="img/card2.png" alt="">
+								<div class="newOF">Новинка</div>
+							</div>
+	
+							<p class="con-p-sale">Рюкзак Under Armour 2л Чорний.</p>
+	
+							<div class="text-btn-new">
+								<p class="con-p1-btn2 con-btn">1146₴</p>
+								<button class="btn-buy">Купити</button>
+							</div>
+						</div>
+	
+	
+						<div class="block-sale-all">
+							<div class="img-sale">
+								<img src="img/card3.png" alt="">
+								<div class="newOF">Новинка</div>
+							</div>
+	
+							<p class="con-p-sale">Дерев’яна підставка для ручок.</p>
+	
+							<div class="text-btn-new">
+								<p class="con-p1-btn3 con-btn">45₴</p>
+								<button class="btn-buy">Купити</button>
+							</div>
+						</div>
+						
+					</div>
+	
+
+				</div>
+
+
+				<div class="Sale-block-3">
+
+
+					<div class="blocks">
+	
+						<div class="block-sale-all">
+							<div class="img-sale">
+								<img src="img/card1.png" alt="">
+								<div class="newOF">Новинка</div>
+							</div>
+	
+							<p class="con-p-sale">Пенал жорсткий, одинарний, Синій. </p>
+	
+							<div class="text-btn-new">
+								<p class="con-p1-btn con-btn">245₴</p>
+								<button class="btn-buy">Купити</button>
+							</div>	
+						</div>
+	
+	
+						<div class="block-sale-all">
+							<div class="img-sale">
+								<img src="img/card2.png" alt="">
+								<div class="newOF">Новинка</div>
+							</div>
+	
+							<p class="con-p-sale">Рюкзак Under Armour 2л Чорний.</p>
+	
+							<div class="text-btn-new">
+								<p class="con-p1-btn2 con-btn">1146₴</p>
+								<button class="btn-buy">Купити</button>
+							</div>
+						</div>
+	
+	
+						<div class="block-sale-all">
+							<div class="img-sale">
+								<img src="img/card3.png" alt="">
+								<div class="newOF">Новинка</div>
+							</div>
+	
+							<p class="con-p-sale">Дерев’яна підставка для ручок.</p>
+	
+							<div class="text-btn-new">
+								<p class="con-p1-btn3 con-btn">45₴</p>
+								<button class="btn-buy">Купити</button>
+							</div>
+						</div>
+						
+					</div>
+	
+
+				</div>
+
+
+				<div class="Sale-block-3">
+
+
+					<div class="blocks">
+	
+						<div class="block-sale-all">
+							<div class="img-sale">
+								<img src="img/card1.png" alt="">
+								<div class="newOF">Новинка</div>
+							</div>
+	
+							<p class="con-p-sale">Пенал жорсткий, одинарний, Синій. </p>
+	
+							<div class="text-btn-new">
+								<p class="con-p1-btn con-btn">245₴</p>
+								<button class="btn-buy">Купити</button>
+							</div>	
+						</div>
+	
+	
+						<div class="block-sale-all">
+							<div class="img-sale">
+								<img src="img/card2.png" alt="">
+								<div class="newOF">Новинка</div>
+							</div>
+	
+							<p class="con-p-sale">Рюкзак Under Armour 2л Чорний.</p>
+	
+							<div class="text-btn-new">
+								<p class="con-p1-btn2 con-btn">1146₴</p>
+								<button class="btn-buy">Купити</button>
+							</div>
+						</div>
+	
+	
+						<div class="block-sale-all">
+							<div class="img-sale">
+								<img src="img/card3.png" alt="">
+								<div class="newOF">Новинка</div>
+							</div>
+	
+							<p class="con-p-sale">Дерев’яна підставка для ручок.</p>
+	
+							<div class="text-btn-new">
+								<p class="con-p1-btn3 con-btn">45₴</p>
+								<button class="btn-buy">Купити</button>
+							</div>
+						</div>
+						
+					</div>
+
+
+			</div>
+		</div>
+
+	</div>
+</div> 
+
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="container-foot">
+		<div class="upper-footer">
+
+			<div class="footer-text-1">
+				<img class="f-logo" src="img/LOGO.svg" alt="">
+				<p class="apeal">Звертайтеся за номером</p>
+				<p class="p-number">+380964567657</p>
+			</div>
+
+			<div class="footer-text-2">
+				<p class="main-f-text">Умови</p>
+
+				<ul class="f-ps">
+					<li><a href=""><p>Сервісні умови</p></a></li>
+					<li><a href=""><p>Комерційні умови</p></a></li>
+					<li><a href=""><p>Гарантійні зобов'язання</p></a></li>
+				</ul>
+			</div>
+
+			<div class="footer-text-3">
+				<p class="main-f-text">Компанія</p>
+
+				<ul class="f-ps">
+					<li><a href=""><p>Місія</p></a></li>
+					<li><a href=""><p>Принципи</p></a></li>
+				</ul>
+			</div>
+
+			<div class="footer-text-4">
+				<p class="main-f-text">Клієнти</p>
+
+				<ul class="f-ps">
+					<li><a href=""><p>Мережевий рітейл</p></a></li>
+					<li><a href=""><p>Острівці і магазини</p></a></li>
+					<li><a href=""><p>Інтернет-магазини</p></a></li>
+					<li><a href=""><p>Instagram-магазини</p></a></li>
+					<li><a href=""><p>Постачальникам</p></a></li>
+				</ul>
+			</div>
+
+			<div class="footer-text-5">
+				<p class="main-f-text">Швидкі посилання</p>
+
+				<ul class="f-ps">
+					<li><a href="#"><p>Контакти</p></a></li>
+					<li><a href="./account/account.html"><p>Особистий кабінет</p></a></li>
+				</ul>
+			</div>
+
+		</div>
+
+
+		<div class="under-footer">
+			<p class="Ncase">© 2023-2025 Ncase. Всі права захищені.</p>
+
+			<div class="p-icons">
+				<p class="Follow">Слідкуй за нами тут</p>
+
+				<div class="messages-imgs">
+					<a href=""><img src="img/telegram.svg" alt=""></a>
+					<a href=""><img src="img/youtube.svg" alt=""></a>
+					<a href=""><img src="img/instagram.svg" alt=""></a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+</footer>
+
+
+
+
+<!-- Popup-User-Enter -->
+<div id="popup" class="popup">
+	<div class="container-Enter">
+		
+		<button class="X-btn" onclick="hidepopupIn()"><img src="./img/x-symbol-svgrepo-com.svg" alt=""></button>
+
+		<div class="content-enter">
+
+			<div class="content">
+
+				
+				
+				<div class="text-close">
+					<p>Вхід</p>
+				</div>
+
+
+				<div class="filds">
+					<div class="email-enter">
+						<p>Ел.почта або телефон</p>
+						<input id="getEnter" type="email" placeholder="Введіть ел. пошту / телефон" required pattern="[a-z0-9_]">
+					</div>
+
+
+					<div class="pass-enter">
+						<p>Пароль</p>
+						<input type="password" placeholder="Введіть пароль" required min="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+					</div>
+				</div>
+
+				
+				<div class="round-remember">
+					<input type="checkbox" id="remember">
+					<label for="remember">Запам'ятати</label>
+				</div>
+
+
+				<div class="btn-reg-btn">
+					<a href="./account/account.html"><button class="signIn">Увійти</button></a>
+					<button class="register" onclick="popupUp()">Зареєструватися</button>
+				</div>
+
+			</div>
+
+		</div>	
+	</div>
+</div>
+
+<!-- Popup-User-up -->
+<div id="popup-up" class="popup-up">
+	<div class="container-Enter">
+
+		<button class="X-btn" onclick="hidepopupUp()"><img src="img/x-symbol-svgrepo-com.svg" alt=""></button>
+
+		<div class="content-enter">
+		
+			<div class="content">
+				<div class="text-close-up">
+					<p>Реєстрація</p>
+				</div>
+
+				<div class="filds">
+					<div class="email-enter">
+						<p>Ел.почта або телефон</p>
+						<input type="email" placeholder="Введіть ел. пошту / телефон" required pattern="[a-z0-9_]+[a-z0-9-]+[a-z]{2,4}$">
+					</div>
+
+
+					<div class="pass-enter-up">
+						<p>Пароль</p>
+						<input type="password" placeholder="Введіть пароль" required min="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+					</div>
+				</div>
+
+				<div class="btn-reg-enter">
+					<button class="register-btn">Зареєструватися</button>
+					<div class="p-a">
+						<p>Уже є аккаунт?</p>
+						<button class="enter-btn" onclick="popupIn()">Увійти</button>
+					</div>	
+				</div>
+
+			</div>	
+
+		</div>
+	</div>
+</div>
+
+<!-- POPUP-CART -->
+<div id="popup-cart" class="popup-cart">
+    <div class="container-cart">
+
+        <button class="X-btn" onclick="hidepopupCart()"><img src="img/x-symbol-svgrepo-com.svg" alt=""></button>
+
+        <p class="p-kosh">Кошик</p>
+
+        <div class="content-cart">
+            <div class="p-cart">
+                <p>Ой! Здається тут пусто.</p>
+                <p>Ви ще нічого не закинули в кошик</p>
+            </div>
+
+            <a href="./placing-an-order.html"><button>ОФОРМИТИ ЗАМОВЛЕННЯ</button></a>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

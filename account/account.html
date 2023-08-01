@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="account.css">
+	<link rel="stylesheet" href="reset.css">
+	<title>Account</title>
+	<link rel="shortcut icon" href="img/Logo-icon-colored.svg" type="image/x-icon">
+</head>
+<body>
+	<div id="personal-data" class="account-personal-data">
+		<!-- HEADER -->
+		<header class="header-account">
+
+			<div class="header" id="Home">
+				<div class="container-1">
+	
+					<div class="lsi">
+						<a href="../index.html"><img src="img/Logo white.svg" alt=""></a>
+						<div class="search">
+							<input type="text" placeholder="Шукати..." class="input_search">
+						</div>
+						<div class="icons">
+							<button><a href="./wish-list.html"><img src="img/heart.svg" alt=""></a></button>
+							<button><a href="./account.html"><img src="img/user.svg" alt=""></a></button>
+							<button onclick="popupCart()"><img src="img/shopping-cart.svg" alt=""></button>
+						</div>
+					</div>
+	
+					<div class="menu">
+						<ul class="menu_ul">
+							<li class="menu_text"><a href="../index.html#Home">Home</a></li>
+							<li class="menu_text"><a href="../index.html#Sale">Sale</a></li>
+							<li class="menu_text"><a href="../index.html#Top-seller">Top Saller</a></li>
+							<li class="menu_text"><a href="../index.html#New">New</a></li>
+						</ul>
+					</div>
+	
+				</div>
+			</div>
+
+		</header>
+		<!-- HEADER END -->
+
+
+		<div class="account-display">
+
+
+			<div class="listOFblocks">
+				<a href="./account.html" class="a-personal">
+				<button class="profile focus">
+					<div class="img-text">
+						<img src="img/user.svg" alt="">
+						<p id="Enter">Ім'я користувача</p>
+					</div>
+				</button></a>
+
+				<a href="./order.html" class="a-data">
+				<button class="My-orders focus">
+					<div class="img-text">
+						<img src="img/orders.svg" alt="">
+						<p>Мої замовлення</p>
+					</div>
+				</button></a>
+
+
+				<a href="./wish-list.html" class="a-data">
+				<button class="Wish-list focus">
+					<div class="img-text">
+						<img src="img/heart.svg" alt="">
+						<p>Список бажань</p>
+					</div>
+				</button></a>
+
+				<a href="" class="a-data">
+				<button class="history focus">
+					<div class="img-text">
+						<img src="img/search-zoom-in.svg" alt="">
+						<p>Історія перегляду</p>
+					</div>
+				</button></a>
+
+				<a href="./messages.html" class="a-data">
+				<button class="notification focus">
+					<div class="img-text">
+						<img src="img/notification.svg" alt="">
+						<p>Сповіщення</p>
+					</div>
+				</button></a>
+
+				<button class="empty focus">
+					<div class="img-text">
+						
+						<p></p>
+					</div>
+				</button>
+
+				<button class="empty focus">
+					<div class="img-text">
+						
+						<p></p>
+					</div>
+				</button>
+			</div>
+
+		<div class="relative">
+
+			<div class="personal-data-blocks" id="personal-data-blocks">
+				<p class="personal-p">Особисті дані</p>
+
+				<div class="blocks-personal">
+					<details class="personal-section bg-personal">
+						<summary class="block-personal">
+							<div class="svg-text-personal">
+								<img src="img/user.svg" alt="">
+								<p>Особисті дані</p>
+							</div>
+							<img class="personal-chevron" src="img/arrow-down.svg" alt="">
+						</summary>
+
+						<div class="block-personal-opened" id="mainFrameOne">
+							<ul>
+								<li>
+									<label for="" class="label-personal"><p>Прізвище</p></label>
+									<p class="text-size" id="secondName"></p>
+								</li>
+
+								<li>														
+									<label for="" class="label-personal"><p>Стать</p></label>
+									<p class="text-size" id="MaleFemale"></p>
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>Ім'я</p></label>
+									<p class="text-size" id="Name"></p>
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>Дата народження</p></label>
+									<p class="text-size" id="Date"></p>
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>По батькові</p></label>
+									<p class="text-size" id="FatherName"></p>
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>Мова</p></label>
+									<p class="text-size" id="Language"></p>
+								</li>
+							</ul>
+
+							<button class="btnPersonalOpened" id="btnChange-personal" onclick="show()">Редагувати</button>
+						</div>
+						
+
+						<!-- Присвоєня тексту з інпута в js -->
+						<div class="block-personal-opened-change" id="mainFrameTwo">
+							<ul>
+								<li>
+									<label for="" class="label-personal"><p>Прізвище</p></label>
+									<input id="getSecondName" class="input-personal" type="text">
+								</li>
+
+								<li>														
+									<label for="" class="label-personal"><p>Стать</p></label>
+									<select name="" id="getMaleFemale" class="input-personal">
+										<option value="Чоловіча">Чоловіча</option>
+										<option value="Жіноча">Жіноча</option>
+									</select>
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>Ім'я</p></label>
+									<input id="getName" class="input-personal" type="text">
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>Дата народження</p></label>
+									<input id="getBirthsday" class="input-personal" type="date">
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>По батькові</p></label>
+									<input id="getFatherName" class="input-personal" type="text" onkeypress="Enable()">
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>Мова</p></label>
+									<select name="" id="getLanguage" class="input-personal">
+										<option value="Українська">Українська</option>
+										<option value="English">English</option>
+									</select>
+								</li>
+							</ul>
+
+							<div class="btnChange">
+								<button class="btnPersonalOpenedChange" id="btnConfirm-personal" onclick="confirmm()">Зберегти</button>
+								<button class="btnPersonalOpenedChange Change2" id="btnConfirm-personal" onclick="showBack()">Скасувати</button>
+							</div>
+						</div>
+					</details>
+
+
+					<div class="block-personal2 bg-personal">
+						<div class="svg-text-personal">
+							<img src="img/shopping-cart.svg" alt="">
+							<p>Мої замовлення</p>
+						</div>
+						<a href="#"><img src="img/arrow-down.svg" alt=""></a>
+					</div>
+
+					<div class="block-personal3 bg-personal">
+						<div class="svg-text-personal">
+							<img src="img/car.svg" alt="">
+							<p>Адреса доставки</p>
+						</div>
+						<a href="#"><img src="img/arrow-down.svg" alt=""></a>
+					</div>
+
+					<details class="login-sections bg-personal">
+						<summary class="block-personal">
+							<div class="svg-text-personal">
+								<img src="img/lock.svg" alt="">
+								<p>Логін</p>
+							</div>
+
+							<img class="login-chevron" src="img/arrow-down.svg" alt="">
+						</summary>
+
+						<div class="block-personal-opened">
+							<div class="personal-row">
+								<p class="p-margin">Логін (електрона пошта)</p>
+
+								<!-- Зробити попап де буде input де вводиться почта і його значення передається на тег p(id="Email") -->
+								<p class="p-fonts" id="Email">kns198006@gmail.com</p>
+							</div>
+
+								<div><button class="confirm-email" onclick="EmailConfirm()">Підтвердити</button></div>
+							
+							<!-- HEART тимчасово -->
+							<button class="change-email" onclick="showPopupSend()"><img src="./img/heart.svg" alt=""> Змінити</button>
+						</div>
+					</details>
+
+					<div class="block-personal5 bg-personal">
+						<div class="svg-text-personal">
+							<img src="img/sms.svg" alt="">
+							<p>Контакти</p>
+						</div>
+
+						<img src="img/arrow-down.svg" alt="">
+					</div>
+					
+				</div>
+			</div>
+
+
+		</div>	
+
+		</div>
+	</div>
+	<!-- TEST-2 END-->
+
+
+   <!-- Footer -->
+	<footer class="footer">
+		<div class="container-foot">
+			<div class="upper-footer">
+
+				<div class="footer-text-1">
+					<img class="f-logo" src="img/LOGO.svg" alt="">
+					<p class="apeal">Звертайтеся за номером</p>
+					<p class="p-number">+380964567657</p>
+				</div>
+
+				<div class="footer-text-2">
+					<p class="main-f-text">Умови</p>
+
+					<ul class="f-ps">
+						<li><a href=""><p>Сервісні умови</p></a></li>
+						<li><a href=""><p>Комерційні умови</p></a></li>
+						<li><a href=""><p>Гарантійні зобов'язання</p></a></li>
+					</ul>
+				</div>
+
+				<div class="footer-text-3">
+					<p class="main-f-text">Компанія</p>
+
+					<ul class="f-ps">
+						<li><a href=""><p>Місія</p></a></li>
+						<li><a href=""><p>Принципи</p></a></li>
+					</ul>
+				</div>
+
+				<div class="footer-text-4">
+					<p class="main-f-text">Клієнти</p>
+
+					<ul class="f-ps">
+						<li><a href=""><p>Мережевий рітейл</p></a></li>
+						<li><a href=""><p>Острівці і магазини</p></a></li>
+						<li><a href=""><p>Інтернет-магазини</p></a></li>
+						<li><a href=""><p>Instagram-магазини</p></a></li>
+						<li><a href=""><p>Постачальникам</p></a></li>
+					</ul>
+				</div>
+
+				<div class="footer-text-5">
+					<p class="main-f-text">Швидкі посилання</p>
+
+					<ul class="f-ps">
+						<li><a href="#"><p>Контакти</p></a></li>
+						<li><a href="./account.html"><p>Особистий кабінет</p></a></li>
+					</ul>
+				</div>
+
+			</div>
+
+
+			<div class="under-footer">
+				<p class="Ncase">© 2023-2025 Ncase. Всі права захищені.</p>
+
+				<div class="p-icons">
+					<p class="Follow">Слідкуй за нами тут</p>
+
+					<div class="messages-imgs">
+						<a href=""><img src="img/telegram.svg" alt=""></a>
+						<a href=""><img src="img/youtube.svg" alt=""></a>
+						<a href=""><img src="img/instagram.svg" alt=""></a>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</footer>
+
+
+	<div id="LoginPopupConfirm" class="popup-loginConfirm">
+		<div class="container-login-popup">
+			<div class="modal-head">
+				<p>Підтвердження почти</p>
+				<img onclick="hideConfirmPopup()" src="./img/x-symbol-svgrepo-com.svg" alt="">
+			</div>
+			
+			<div class="modal-content">
+
+				<div class="text-email">
+					<p>На вашу адресу ел. пошти <strong id="email-confirm">kns198006@gmail.com</strong> відправлено лист з кодом підтвердження</p>
+				</div>
+
+				<div class="input-cod">
+					<p>Код підтвердження</p>
+					<input id="input-cod" type="text">
+				</div>
+
+				<div class="button-emailConfirm">
+					<button class="btnConfirm">Підтвердити</button>
+					<button class="btnCancel" onclick="hideConfirmPopup()">Скасувати</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+<!-- POPUP-CART -->
+<div id="popup-cart" class="popup-cart">
+    <div class="container-cart">
+
+        <button class="X-btn" onclick="hidepopupCart()"><img src="img/x-symbol-svgrepo-com.svg" alt=""></button>
+
+        <p class="p-kosh">Кошик</p>
+
+        <div class="content-cart">
+            <div class="p-cart">
+                <p>Ой! Здається тут пусто.</p>
+                <p>Ви ще нічого не закинули в кошик</p>
+            </div>
+
+            <a href="../placing-an-order.html"><button>ОФОРМИТИ ЗАМОВЛЕННЯ</button></a>
+        </div>
+
+    </div>
+</div>
+
+	<script src="../script.js"></script>
+    <script src="account.js"></script>
+	<script src="../all.js"></script>
+</body>
+</html>
